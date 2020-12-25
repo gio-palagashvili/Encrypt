@@ -75,27 +75,51 @@ namespace ConsoleApp1
             //418v100t75y432x45i15c20a 65e115w228l38b20t 4 
             Char[] letters = str.ToCharArray(); 
             Char[] onlyLetters = new char[str.Length];
+            int count = 0;
 
             for (int i = 0; i < str.Length; i++)
 			{
                  if(Char.IsLetter(str[i])){
                     onlyLetters[i] = str[i];
+                    count++;
                 }
 			}
+            
             string onlyLetters_1= string.Join("", onlyLetters);
             var lets = Regex.Matches(onlyLetters_1, @"[a-z]").Cast<Match>().Select(m => m.Value).ToArray();
             string[] final = new string[str.Length];
-
+            int[] arrayOfInts = new int[count];
+            int[] numsOfString = new int[lets.Length];
+            var b = "";
+            
+            var k = 0;
             for (int i = 0; i < str.Length; i++)
             {
-                string b = string.Empty;
+
                 if (Char.IsDigit(str[i]))
                 {
-                    b = String.Join("", str[i].ToString().Where(char.IsDigit));
-                    Console.WriteLine(int.Parse(b) * 2);
-
+                    b += str[i];
+                }
+                else if (char.IsLetter(str[i]))
+                {
+                    arrayOfInts[k] = int.Parse(b);
+                    k++;
+                    b = "";
                 }
             }
+
+            for (int i = 0; i < lets.Length; i++)
+            {
+                numsOfString[i] = StringToNumber(Convert.ToChar(lets[i]));
+            }
+            
+            var final1 = new string[str.Length];
+            for (int i = 0; i < arrayOfInts.Length; i++)
+            {
+                final1[i] = NumberToString(arrayOfInts[i] / numsOfString[i]);
+            }
+            Console.WriteLine(String.Join("",final1));
+
             return "!";
         }
 

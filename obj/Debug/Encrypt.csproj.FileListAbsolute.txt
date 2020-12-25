@@ -5,3 +5,10 @@ C:\Users\Gio\source\repos\encrypt\obj\Debug\Encrypt.csprojAssemblyReference.cach
 C:\Users\Gio\source\repos\encrypt\obj\Debug\Encrypt.csproj.CoreCompileInputs.cache
 C:\Users\Gio\source\repos\encrypt\obj\Debug\ConsoleApp1.exe
 C:\Users\Gio\source\repos\encrypt\obj\Debug\ConsoleApp1.pdb
+C:\Users\Gio\Source\Repos\Dk\bin\Debug\ConsoleApp1.exe.config
+C:\Users\Gio\Source\Repos\Dk\bin\Debug\ConsoleApp1.exe
+C:\Users\Gio\Source\Repos\Dk\bin\Debug\ConsoleApp1.pdb
+C:\Users\Gio\Source\Repos\Dk\obj\Debug\Encrypt.csprojAssemblyReference.cache
+C:\Users\Gio\Source\Repos\Dk\obj\Debug\Encrypt.csproj.CoreCompileInputs.cache
+C:\Users\Gio\Source\Repos\Dk\obj\Debug\ConsoleApp1.exe
+C:\Users\Gio\Source\Repos\Dk\obj\Debug\ConsoleApp1.pdb
